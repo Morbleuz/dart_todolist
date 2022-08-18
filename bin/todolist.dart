@@ -5,6 +5,13 @@ class ToDoList{
 
   ToDoList();
 
+  bool isEmpty(){
+    if (_todolist.isEmpty){
+      return true;
+    }else{
+      return false;
+    }
+  }
   List<Task> getList(){
     return _todolist;
   }
